@@ -1,0 +1,77 @@
+#form {
+    height: 100vh;
+    width: 100vw;
+    background: teal;
+}
+
+.form__container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+
+.form__inputWrap {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputWrap-inputLabel {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inputWrap-inputLabel span{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.form__inputWrap-inputLabel label{
+    padding-bottom: 0.8rem;
+}
+
+.form__inputWrap-inputLabel span input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.form__inputWrap span{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+}
+
+.form__inputWrap-btnWrap {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form__inputWrap-btnWrap button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.form__inputWrap-btnWrap span {
+    color: red;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SideHustle- SubmitValidationForm</title>
+</head>
+<body>
+    <div id="form">
+        <form class="form__container">
+            <div class="form__inputWrap">
+                <div class="form__inputWrap-inputLabel">
+                    <label>Full Name: </label>
+                    <span><input type="text" placeholder="Enter your name" id="form__input-name" onkeyup="validateName()"></span>
+                </div>
+                <span id="name-error"></span>
+            </div>
+            <div class="form__inputWrap">
+                <div class="form__inputWrap-inputLabel">
+                    <label>Phone No.: </label>
+                    <span><input type="tel" placeholder="234 555 254 28" id="form__input-phoneNo" onkeyup="validatePhoneNo()"></span>
+                    
+                </div>
+                <span id="phone-error"></span>
+            </div>
+            <div class="form__inputWrap">
+                <div class="form__inputWrap-inputLabel">
+                    <label>E-Mail: </label>
+                    <span><input type="email" placeholder="Enter Email" id="form__input-email" onkeyup="validateEmail()"></span>
+                    
+                </div>
+                <span id="email-error"></span>
+            </div>
+            <div class="form__inputWrap-btnWrap">
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+            </div> 
+        </form>
+    </div>
+
+    <!-- JavaScrpt -->
+    <script src="script.js"></script>
+</body>
+</html>
