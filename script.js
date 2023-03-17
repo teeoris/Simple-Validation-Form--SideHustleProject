@@ -10,14 +10,14 @@ function validateName(){
        nameError.textContent = 'Name is required';
        return false;
     }
-    nameError.textContent = 'valid'
+    nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>'
     return true;
 }
 
 function validatePhoneNo (){
     var phoneNo = document.getElementById('form__input-phoneNo').value;
 
-    if (phoneNo.length !== 11){
+    if (phoneNo.length !== 10){
         phoneError.textContent = 'Phone number is required';
         return false;
     }
@@ -25,7 +25,7 @@ function validatePhoneNo (){
         phoneError.textContent = 'Invalid Phone number';
         return false;
     }
-    phoneError.textContent = 'Valid';
+    phoneError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -39,7 +39,7 @@ function validateEmail (){
         emailError.textContent = 'Email is required';
         return false;
     }
-    emailError.textContent = 'valid';
+    emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
         return true;
 }
 
@@ -49,5 +49,7 @@ function validateForm(){
         submitError.textContent = 'Please, check & fix error!';
         setTimeout(function(){submitError.style.display = 'none';}, 2500);
         return false;
+    } if (validateName()){
+        return alert('FORM SUBMITTED!')
     }
 }
