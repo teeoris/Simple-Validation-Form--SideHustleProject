@@ -17,41 +17,67 @@
 
     <title>SideHustle- SubmitValidationForm</title>
 </head>
-<body>
-    <div id="form">
-        <div class="form__titleWrap">
-            <h1>simple form </h1>
-            <span></span>
+<body>`
+    <section>
+        <div id="navbar">
+            <div class="navbar__container">
+                <h1 class="navbar__title">Delviz <span>SideHustle</span></h1>
+                <div class="navbar__linkWrap">
+                    <ul>
+                        <li><a href="#">feature</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">login</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <form class="form__container">
-            <div class="form__inputWrap">
-                <div class="form__inputWrap-inputLabel">
-                    <label>Full Name: </label>
-                    <span><input type="text" placeholder="Enter your name" id="form__input-name" onkeyup="validateName()"></span>
+        <div id="form">
+            <div class="form__descWrap">
+                <div class="form__descWrap">
+                    <h2>Lorem, ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio enim temporibus voluptatibus quod tempora aperiam ex doloremque harum exercitationem dolore voluptates at necessitatibus soluta, autem totam adipisci illum, minima dolorem porro explicabo, beatae non.</p>
                 </div>
-                <span id="name-error"></span>
             </div>
-            <div class="form__inputWrap">
-                <div class="form__inputWrap-inputLabel">
-                    <label>Phone No.: </label>
-                    <span><input type="tel" placeholder="234 555 254 28" id="form__input-phoneNo" onkeyup="validatePhoneNo()"></span>
-                    
+            <div class="form__Wrap">
+                <div class="form__titleWrap">
+                    <h1>simple form </h1>
+                    <span></span>
                 </div>
-                <span id="phone-error"></span>
-            </div>
-            <div class="form__inputWrap">
-                <div class="form__inputWrap-inputLabel">
-                    <label>E-Mail: </label>
-                    <span><input type="email" placeholder="Enter Email" id="form__input-email" onkeyup="validateEmail()"></span> 
+                <form class="form__container">
+                    <div class="form__inputWrap">
+                        <div class="form__inputWrap-inputLabel">
+                            <label>Full Name: </label>
+                            <span><input type="text" placeholder="Enter your name" id="form__input-name" onkeyup="validateName()"></span>
+                        </div>
+                    <span id="name-error"></span>
                 </div>
-                <span id="email-error"></span>
+                <div class="form__inputWrap">
+                    <div class="form__inputWrap-inputLabel">
+                        <label>Phone No.: </label>
+                        <span><input type="tel" placeholder="234 555 254 28" id="form__input-phoneNo" onkeyup="validatePhoneNo()"></span>
+                        
+                    </div>
+                    <span id="phone-error"></span>
+                </div>
+                <div class="form__inputWrap">
+                    <div class="form__inputWrap-inputLabel">
+                        <label>E-Mail: </label>
+                        <span><input type="email" placeholder="Enter Email" id="form__input-email" onkeyup="validateEmail()"></span> 
+                    </div>
+                    <span id="email-error"></span>
+                </div>
+                <div class="form__inputWrap-btnWrap">
+                    <button onclick="return validateForm()">Submit <i class="fa-regular fa-paper-plane"></i></button>
+                    <span id="submit-error"></span>
+                </div> 
+                </form>
             </div>
-            <div class="form__inputWrap-btnWrap">
-                <button onclick="return validateForm()">Submit <i class="fa-regular fa-paper-plane"></i></button>
-                <span id="submit-error"></span>
-            </div> 
-        </form>
-    </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
 
     <!-- JavaScrpt -->
     <script src="script.js"></script>
